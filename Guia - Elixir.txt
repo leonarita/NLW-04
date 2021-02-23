@@ -1,0 +1,44 @@
+EXILIR : Linguagem compilada que roda no erlang
+
+1) CONFIGURAÇÃO DE AMBIENTE
+
+  A) Instalar ELixir e Phoenix
+  - elixir --version
+  - mix archive.install hex phx_new 1.5.7
+
+  B) Criar projeto
+  - mix phx.new <projectName> --no-webpack --no-html
+
+  C) Verificar se o banco de dados está funcionando 
+  - Pasta config, Arquivos dev.exs e test.exs
+  - mix ecto.setup
+
+  D) Baixa as dependências da aplicação
+  - Arquivo mix.exs
+  - mix deps.get
+  - mix credo gen.config
+
+  E) Rodar projeto
+  - mix phx.server
+
+2) PROJETO E CÓDIGO FONTE
+
+  A) Rotas
+  - Pasta lib, arquivo router.ex
+
+  B) Comandos de terminal
+  - iex
+  - inex -S mix
+    - recompile
+    - alias
+
+  C) Programação Funcional
+  - Imutabilidade
+  - Pattern Matching
+  - Pipe Operator
+  - Enum e Stream
+
+  D) Testes Automatizados
+  - Diretório test
+  - mix test
+
