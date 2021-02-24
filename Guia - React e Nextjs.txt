@@ -1,0 +1,6 @@
+NEXTJS
+
+1) Configurações iniciais
+
+  A) Criando Projeto
+  - yarn create next-app <name>

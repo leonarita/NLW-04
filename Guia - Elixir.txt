@@ -11,6 +11,7 @@ EXILIR : Linguagem compilada que roda no erlang
 
   C) Verificar se o banco de dados está funcionando 
   - Pasta config, Arquivos dev.exs e test.exs
+  - mix ecto.create
   - mix ecto.setup
 
   D) Baixa as dependências da aplicação
@@ -41,4 +42,15 @@ EXILIR : Linguagem compilada que roda no erlang
   D) Testes Automatizados
   - Diretório test
   - mix test
+
+3) ECTO 
+  - Trabalhar com banco de dados
+
+  A) Migration
+  - create ecto.gen.migration <name>
+  - Editar arquivo gerado
+
+  - mix ecto.create
+  - mix ecto.migrate
+  - mix ecto.drop
 
