@@ -1,6 +1,6 @@
 defmodule Rocketpay.NumbersTest do
 
-  use ExUnit.Case
+  use ExUnit.Case, async: true
 
   alias Rocketpay.Numbers
 
@@ -15,17 +15,15 @@ defmodule Rocketpay.NumbersTest do
 
     end
 
-    describe "sum_from_file/1" do
-      test "when there is no file with the given name, returns an error" do
+    test "when there is no file with the given name, returns an error" do
 
-        response = Numbers.sum_from_file("banana")
+      response = Numbers.sum_from_file("banana")
 
-        expected_response = {:error, %{message: "Invalid file!"}}
+      expected_response = {:error, %{message: "Invalid file!"}}
 
-        assert response == expected_response
+      assert response == expected_response
 
-      end
-
+    end
   end
 
 end
