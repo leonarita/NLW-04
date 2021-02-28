@@ -31,9 +31,7 @@ class SendMailService {
 
         const mailTemplateParse = handlebars.compile(templateFileContent)
 
-        const html = mailTemplateParse({
-            name: to, title: subject, description: variables
-        })
+        const html = mailTemplateParse(variables)
 
         const message = await this.client.sendMail({
             to, subject, html, from: "NPS <noreply@nps.com.br>"
